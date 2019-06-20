@@ -1,0 +1,23 @@
+{
+  "name": "uwinrent",
+  "version": "0.1.0",
+  "description": "front end for the uWin rent site",
+  "main": "main.js",
+  "dependencies": {
+    "degit": "^2.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corrupted-segmentation/uWinRentFront.git"
+  },
+  "author": "Corrupted-Segmentation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/corrupted-segmentation/uWinRentFront/issues"
+  },
+  "homepage": "https://github.com/corrupted-segmentation/uWinRentFront#readme"
+}
