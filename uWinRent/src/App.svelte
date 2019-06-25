@@ -1,11 +1,17 @@
 <script>
-	export let name;
+    import House from './House.svelte' 
 </script>
 
 <style>
-	h1 {
-		color: purple;
-	}
+    #house{
+        width: 400px;
+        height: 100%;
+        background-color: #008dff;
+        display:inline-block;
+    }
+    
 </style>
 
-<h1>Hello {name}!</h1>
+<div id="house">
+    <House/>
+</div>
