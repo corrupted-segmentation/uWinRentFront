@@ -1,13 +1,16 @@
 <script>
     import {makeMap} from './map.js';
     import {onMount} from 'svelte';
-    onMount(() =>{var map = makeMap('mapid');})    
+
+    onMount(() =>{
+        var map = makeMap('mapid');
+    })    
 </script>
 
 <style>
 
 #mapid{
-    height: 180px;
+    height: 100%;
 }
     
 </style>

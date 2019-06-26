@@ -6,15 +6,29 @@
 <style>
     #house{
         width: 400px;
-        height: 100%;
         background-color: #008dff;
-        display:inline-block;
+    }
+
+    #house, #map{
+        height: 100%;
+        overflow: auto;
+        float: left;
+        
+    
+    }
+
+    #map{
+        width: calc(100% - 400px);
+        /*padding-left: 400px;*/
+        background: gray;
+        display: inline-block;
     }
     
 </style>
 
 <div id="house">
     <House/>
+</div>
+<div id="map">
     <Map/>
-    
 </div>
