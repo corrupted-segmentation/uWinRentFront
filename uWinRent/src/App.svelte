@@ -1,5 +1,6 @@
 <script>
-    import House from './House.svelte' 
+    import House from './side/House.svelte' 
+    import Map from './map/Map.svelte'
 </script>
 
 <style>
@@ -14,4 +15,6 @@
 
 <div id="house">
     <House/>
+    <Map/>
+    
 </div>

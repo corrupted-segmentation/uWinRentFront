@@ -1,4 +1,5 @@
 import svelte from 'rollup-plugin-svelte';
+import json from 'rollup-plugin-json';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
@@ -30,7 +31,9 @@ export default {
 		// some cases you'll need additional configuration —
 		// consult the documentation for details:
 		// https://github.com/rollup/rollup-plugin-commonjs
-		resolve({ browser: true }),
+        ,json(),
+		resolve({
+            browser: true }),
 		commonjs(),
 
 		// Watch the `public` directory and refresh the
