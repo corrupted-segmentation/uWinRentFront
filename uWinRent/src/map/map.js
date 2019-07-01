@@ -9,5 +9,6 @@ export function makeMap(id){
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1IjoicHJhaXJpciIsImEiOiJjanhkdzFlem4waWYxM3htbXNneGF1ZG5oIn0.cQBLSxaasBom95pejfIbIQ'
 }).addTo(mymap);
+
     return mymap;
 }
