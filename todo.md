@@ -2,7 +2,8 @@
  ====
 
  1. important things to fix
-    1.change token and find a good way to obfuscate token without it going to front end
+    1. find a good way to obfuscate token without it going to front end
+    1. change token
  1. basic functionality
     1. map markers to click and display data on side
     1. burger menu for side bar
