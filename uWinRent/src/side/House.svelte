@@ -1,5 +1,5 @@
 <script>
-	export let name = "Ryan";
+    import {name, price} from '../store.js'
     let inName="place holder";
 </script>
 
@@ -7,7 +7,7 @@
     
 </style>
 
-<h1>Hello {name}!</h1>
+<h1>Hello {$name}!</h1>
 <input bind:value={inName}/>
-<button on:click={()=>{name = inName}}>Submit</button>
+<button on:click={()=>{name.change(inName)}}>Submit</button>
 
