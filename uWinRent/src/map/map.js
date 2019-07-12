@@ -9,6 +9,7 @@ class Marker {
     }
 
     add(map){
+    
         this.marker = L.marker([this.lat, this.lon]).addTo(map);
     }
 
