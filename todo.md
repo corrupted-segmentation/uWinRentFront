@@ -5,7 +5,7 @@
     1. put token in a cookie
     1. change token
  1. basic functionality
-    1. change data to images, prices, and names
+    1. add images 
     1. burger menu for side bar
     1. add session cookies
  1. intermediate functionality

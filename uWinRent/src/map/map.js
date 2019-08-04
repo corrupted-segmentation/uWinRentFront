@@ -1,17 +1,21 @@
 import * as L from 'leaflet/src/Leaflet' 
-import {name, price} from '../store'
+import {address, price} from '../store'
 
 
 class Marker {
 
-    constructor(lat, lon, name){
+    constructor(lat, lon, addr, pri, map){
         this.lat = lat;
         this.lon = lon;
-        this.name = name;
+        this.addr = addr;
+        this.price = pri;
+        this.add(map);
     }
 
     onClick(){
-        name.change(this.name);
+        address.change(this.addr);
+        price.change(this.price);
+
     }
 
     add(map){
@@ -35,11 +39,9 @@ export function makeMap(id){
     accessToken: 'pk.eyJ1IjoicHJhaXJpciIsImEiOiJjanhkdzFlem4waWYxM3htbXNneGF1ZG5oIn0.cQBLSxaasBom95pejfIbIQ'
 }).addTo(mymap);
 
-    var mark = new Marker(42.306, -83.067, "Hello");
-    mark.add(mymap);
+    var mark = new Marker(42.306, -83.067, "Hello", 45, mymap);
 
-    var mark2 = new Marker(42.306, -83.060, "itch");
-    mark2.add(mymap);
+    var mark2 = new Marker(42.306, -83.060, "itch", 12, mymap);
 
     return mymap;
 }

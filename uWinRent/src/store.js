@@ -1,6 +1,6 @@
 import {writable} from 'svelte/store';
 
-export const name = createName();
+export const address = createAdd();
 export const price = createPrice();
 
 function createPrice(){
@@ -12,7 +12,7 @@ function createPrice(){
     }
 }
 
-function createName(){
+function createAdd(){
     const {subscribe, set, update} = writable("World");
 
     return {
